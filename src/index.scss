@@ -50,13 +50,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     &__item {
         &:hover {
-            transform: scale(1.2);
+            background-color: rgba(29, 105, 192, 0.993);
             transition: 0.4s ease-in-out;
         }
-        width: 220px;
-        height: auto;
+        max-width: 220px;
         background-color: rgb(214, 167, 135);
         border-radius: 10px;
         transition: 0.4s ease-in-out;
@@ -83,10 +83,11 @@
 }
 .add-btn {
     &:hover {
-        color: rgb(214, 167, 135);
+        color: rgb(2, 0, 5);
         background-color: rgb(250, 242, 171);
         transition: 0.3s ease-in-out;
     }
+    background-color: rgb(111, 250, 123);
     width: 100px;
     display: block;
     margin: auto;
@@ -98,4 +99,16 @@
     padding: 5px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
+
+.remove-card {
+    display: block;
+    background-color: rgb(255, 117, 82);
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }

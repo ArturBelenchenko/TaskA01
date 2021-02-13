@@ -1,28 +1,17 @@
-import React, { Component } from 'react';
-import './Inner';
-import Inner from './Inner';
+import React from 'react';
+import DataItems from './DataItems';
 import Header from './Header';
 import { cardItems } from './data/data';
 
-
-class App extends Component {
-    render() {
-        return (
-            <div className="container">
-                <Header />
-                <div className="inner">
-                    {cardItems.map((dataItem) => (
-                        <Inner
-                            Title={dataItem.title}
-                            Description={dataItem.description}
-                            Image={dataItem.image}
-                        />
-                    ))}
-                </div>
-            </div>
-        )
-    }
+function App() {
+    return (
+        <div className="container">
+            <Header />
+            <DataItems cardItems={cardItems} />
+        </div>
+    )
 }
+
 
 
 export default App;
